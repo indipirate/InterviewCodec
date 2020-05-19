@@ -9,6 +9,7 @@ public class UnsetEvenBits {
 
     static int unsetEvenBits(int x) {
         final List<Integer> tmp = new ArrayList();
+        System.out.print("Reversed Binary Of Integer:");
         while (x > 0) {
             if (tmp.size() % 2 == 0)
                 tmp.add(0);
@@ -17,7 +18,7 @@ public class UnsetEvenBits {
             System.out.print(x % 2);
             x = x / 2;
         }
-        System.out.println();
+        System.out.print("\nNew Binary After Resetting Even bits:");
         // Collections.reverse(tmp);
         tmp.stream().forEach(System.out::print);
         System.out.println();
