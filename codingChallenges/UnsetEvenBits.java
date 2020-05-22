@@ -10,7 +10,7 @@ public class UnsetEvenBits {
     static int unsetEvenBits(int x) {
         // System.out.print("Binary Of Integer:");
         // printRecusively(x);
-        final List<Integer> tmp = new ArrayList();
+        final List<Integer> tmp = new ArrayList<Integer>();
         while (x > 0) {
             if (tmp.size() % 2 == 0) tmp.add(0); else tmp.add(x % 2);
             x = x / 2;

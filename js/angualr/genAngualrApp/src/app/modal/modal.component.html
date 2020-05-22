@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>{{ data.title }}</h1>
+<div mat-dialog-content>
+  <div>
+    {{ data | json }}
+  </div>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-raised-button (click)="onNoClick()" color="warn">Close</button>
+  <button
+    color="primary"
+    mat-raised-button
+    (click)="emitEventForParent()"
+    *ngIf="data.showActionButton"
+  >
+    {{ data.actionButtonText }}
+  </button>
+</div>
