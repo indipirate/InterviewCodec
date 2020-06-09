@@ -1,0 +1,1 @@
+"use strict";!function(){this.NBarz=function(){this.nbarz=null}}();

@@ -1,0 +1,1 @@
+"use strict";var express=require("express"),router=express.Router();router.get("/",function(r,e){e.render("form",{title:"Registration form"})}),router.post("/",function(r,e){console.log(r.body),e.render("form",{title:"Registration form"})}),module.exports=router;

@@ -1,0 +1,1 @@
+"use strict";var express=require("express"),path=require("path"),routes=require("./routes/index"),bodyParser=require("body-parser"),app=express();app.set("views",path.join(__dirname,"views")),app.set("view engine","pug"),app.use(bodyParser.urlencoded({extended:!0})),app.use("/",routes),module.exports=app;
