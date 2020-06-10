@@ -32,7 +32,8 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     this.nbarz = document.createElement("div");
     this.nbarz.className = "scotch-nbarz " + this.options.className;
     this.nbarz.style.backgroundColor = this.options.backgroundColor;
-    this.nbarz.style.color = this.options.color; // Create content area and append to modal
+    this.nbarz.style.color = this.options.color;
+    this.nbarz.style.position = 'sticky'; // Create content area and append to modal
 
     contentHolder = document.createElement("div");
     contentHolder.className = "scotch-content";
@@ -64,9 +65,10 @@ switch (_nbarzId) {
     {
       response = {
         content: "This is Attempt One to show Custom Mesage!",
-        backgroundColor: "#ffff00",
+        backgroundColor: "#fff",
         color: "#000",
-        position: "top"
+        position: "top",
+        className: "customClass1 "
       };
       break;
     }
@@ -77,7 +79,8 @@ switch (_nbarzId) {
         content: "This is Attempt Two to show Custom Mesage!",
         backgroundColor: "#000",
         color: "#fff",
-        position: "top"
+        position: "top",
+        className: "customClass2 "
       };
       break;
     }

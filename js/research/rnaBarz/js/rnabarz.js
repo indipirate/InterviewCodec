@@ -30,6 +30,7 @@
     this.nbarz.className = "scotch-nbarz " + this.options.className;
     this.nbarz.style.backgroundColor = this.options.backgroundColor;
     this.nbarz.style.color = this.options.color;
+    this.nbarz.style.position = 'sticky';
 
     // Create content area and append to modal
     contentHolder = document.createElement("div");
@@ -62,9 +63,10 @@ switch(_nbarzId){
   case 1: {
     response = {
       content: "This is Attempt One to show Custom Mesage!",
-      backgroundColor: "#ffff00",
+      backgroundColor: "#fff",
       color: "#000",
       position: "top",
+      className: "customClass1 "
     }
     break;
   }
@@ -74,6 +76,7 @@ switch(_nbarzId){
       backgroundColor: "#000",
       color: "#fff",
       position: "top",
+      className: "customClass2 "
     }
     break;
   }
