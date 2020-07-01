@@ -3,35 +3,53 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>NiftyBarz</title>
+    <title>NAyeem Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="../css/rnaBarz.css"
+      href="http://127.0.0.1:8000/css/rnaBarz.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="../css/viewPage.css"
+      href="http://127.0.0.1:8000/css/viewPage.css"
     />
   </head>
   <body>
-    <!-- <script src="../js/rnabarz.js" async></script> -->
+      <!-- <script src="../js/rnabarz.js" async></script> -->
     <!-- Nbarz -  Paste this Nbarz code before closing body tag -->
     <script type="text/javascript">
-      var _nbarzId = 1;
-      var cnox = document.createElement("script");
-      cnox.type = "text/javascript";
-      cnox.async = true;
-      cnox.src = "../js/rnabarz.js";
+      var files = [
+        "runtime-es2015.js",
+        "runtime-es5.js",
+        "polyfills-es5.js",
+        "polyfills-es2015.js",
+        "styles-es2015.js",
+        "styles-es5.js",
+        "scripts.js",
+        "vendor-es2015.js",
+        "vendor-es5.js",
+        "main-es2015.js",
+        "main-es5.js",
+      ];
+      files.forEach((file) => {
+        var iElm = document.createElement("script");
+        iElm.type = "text/javascript";
+        iElm.async = true;
+        iElm.src = `http://my.localhost:8080/barz/${file}`;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(iElm, s);
+      });
+      var iElm = document.createElement("app-root");
+      localStorage.setItem('niftyBarzId',5631671361601536);
       var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(cnox, s);
+        s.parentNode.insertBefore(iElm, s);
     </script>
     <!-- Nbarz code ends here -->
-    <div>
+    <div class='ext-website-content'>
       <p>
         Pellentesque habitant morbi tristique senectus et netus et malesuada
         fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,

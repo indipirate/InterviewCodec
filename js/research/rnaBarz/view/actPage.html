@@ -22,13 +22,31 @@
     <!-- <script src="../js/rnabarz.js" async></script> -->
     <!-- Nbarz -  Paste this Nbarz code before closing body tag -->
     <script type="text/javascript">
-      var _nbarzId = 2;
-      var cnox = document.createElement("script");
-      cnox.type = "text/javascript";
-      cnox.async = true;
-      cnox.src = "../js/rnabarz.js";
+      var files = [
+        "runtime-es2015.js",
+        "runtime-es5.js",
+        "polyfills-es5.js",
+        "polyfills-es2015.js",
+        "styles-es2015.js",
+        "styles-es5.js",
+        "scripts.js",
+        "vendor-es2015.js",
+        "vendor-es5.js",
+        "main-es2015.js",
+        "main-es5.js",
+      ];
+      files.forEach((file) => {
+        var iElm = document.createElement("script");
+        iElm.type = "text/javascript";
+        iElm.async = true;
+        iElm.src = `http://my.localhost:8080/barz/${file}`;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(iElm, s);
+      });
+      var iElm = document.createElement("app-root");
+      localStorage.setItem("niftyBarzId", 5640825748848640);
       var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(cnox, s);
+      s.parentNode.insertBefore(iElm, s);
     </script>
     <!-- Nbarz code ends here -->
     <div>

@@ -6,24 +6,21 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { ModalComponent } from './modal/modal.component';
-import { ParentComponent } from './parent/parent.component';
+import { ModalModule } from './modal/modal.module';
+import { ParentModule } from './parent/parent.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ModalComponent,
-    ParentComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ModalModule,
+    ParentModule,
   ],
   providers: [],
-  entryComponents:[
-    ModalComponent
-  ],
-  bootstrap: [AppComponent]
+  entryComponents: [ModalComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
