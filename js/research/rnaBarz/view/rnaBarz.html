@@ -19,37 +19,24 @@
     />
   </head>
   <body>
-      <!-- <script src="../js/rnabarz.js" async></script> -->
-    <!-- Nbarz -  Paste this Nbarz code before closing body tag -->
-    <script type="text/javascript">
-      var files = [
-        "runtime-es2015.js",
-        "runtime-es5.js",
-        "polyfills-es5.js",
-        "polyfills-es2015.js",
-        "styles-es2015.js",
-        "styles-es5.js",
-        "scripts.js",
-        "vendor-es2015.js",
-        "vendor-es5.js",
-        "main-es2015.js",
-        "main-es5.js",
-      ];
-      files.forEach((file) => {
-        var iElm = document.createElement("script");
-        iElm.type = "text/javascript";
-        iElm.async = true;
-        iElm.src = `http://my.localhost:8080/barz/${file}`;
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(iElm, s);
-      });
-      var iElm = document.createElement("app-root");
-      localStorage.setItem('niftyBarzId',5631671361601536);
-      var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(iElm, s);
-    </script>
-    <!-- Nbarz code ends here -->
-    <div class='ext-website-content'>
+    <header
+      style="
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        background-color: aqua;
+        color: black;
+        z-index: 10;
+      "
+    >
+      <div>
+        <h2>Iam a Header</h2>
+      </div>
+    </header>
+
+    <div class="ext-website-content" style="top: 67px; position: relative;">
       <p>
         Pellentesque habitant morbi tristique senectus et netus et malesuada
         fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
@@ -247,5 +234,17 @@
         luctus, metus
       </p>
     </div>
+   
+   
+   
+    <!-- Niftybarz -  Paste this Niftybarz code before closing body tag -->
+    <!-- <nifty-start></nifty-start>
+    <script type="text/javascript">
+    localStorage.setItem('niftyBarzDomain','nayeem');
+    var iElm = document.createElement("script");iElm.type = "text/javascript"; iElm.async = true;iElm.src = "https://nayeem.niftybarz.com/niftyBarz.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(iElm, s);localStorage.setItem('niftyBarzId',5667024915136512);
+    </script> -->
+    <!-- Niftybarz code ends here -->
+    <!-- python3 -m http.server 8000 --bind 127.0.0.1 -->
+     <script src="https://my.hellobar.com/11298a8475cadd2e27949db65802569ede1d01b8.js" type="text/javascript" charset="utf-8" async="async"></script>
   </body>
 </html>

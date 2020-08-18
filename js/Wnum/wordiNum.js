@@ -15,14 +15,14 @@ const numberMap = {
   9: "nine",
   10: "Ten",
   11: "Eleven",
-  12: "Twevle",
-  13: "Thirtheen",
+  12: "Twelve",
+  13: "Thirteen",
   14: "Fourteen",
   15: "Fifteen",
   16: "Sixteen",
   17: "Seventeen",
-  18: "Eightheen",
-  19: "nieenten",
+  18: "Eighteen",
+  19: "nineteen",
   20: "twenty",
   30: "Thirty",
   40: "forty",
@@ -30,7 +30,7 @@ const numberMap = {
   60: "sixty",
   70: "seventy",
   80: "eighty",
-  90: "nienty",
+  90: "ninety",
 };
 
 const _compute = () => {

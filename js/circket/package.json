@@ -1,0 +1,11 @@
+{
+  "name": "js-web-circket",
+  "version": "1.0.0",
+  "description": "Inteview Task For FissionLabs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammed Ashraf",
+  "license": "ISC"
+}
