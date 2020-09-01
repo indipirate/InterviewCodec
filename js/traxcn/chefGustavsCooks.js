@@ -1,6 +1,22 @@
-const input =
-  "FIBERSpinach FIBERSpinach CARBRice FATCheese FIBERBeans FIBERBeans CARBPotato FIBERBroccoli FIBERBanana FIBERBeans";
-const ingredients = input.split(" ");
+const market = [
+  "FATOil",
+  "FIBERSpinach",
+  "CARBRice",
+  "FATCheese",
+  "FIBERBeans",
+  "CARBPotato",
+  "FIBERBroccoli",
+  "FIBERBanana",
+  "FIBERBeans",
+];
+let count = 0;
+let ingredients = [];
+while (count < 100000) {
+  ingredients.push(market[Math.floor(Math.random() * (market.length - 0) + 0)]);
+  count++;
+}
+console.log(ingredients);
+// JuSt To Populate Data
 const ingredientCategories = ["FAT", "FIBER", "CARB"];
 let restaurantInventory = ingredientCategories
   .map((category) => {
