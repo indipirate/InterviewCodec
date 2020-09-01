@@ -11,7 +11,7 @@ const market = [
 ];
 let count = 0;
 let ingredients = [];
-while (count < 100000) {
+while (count < 9) {
   ingredients.push(market[Math.floor(Math.random() * (market.length - 0) + 0)]);
   count++;
 }
